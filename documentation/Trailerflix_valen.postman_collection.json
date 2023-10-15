@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "9cbb5cf3-174a-481b-ad4a-3ae6aa171bee",
+		"name": "Trailerflix",
+		"description": "A continuacion se detallan los endpoints creados",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10221356"
+	},
+	"item": [
+		{
+			"name": "Actores",
+			"item": [
+				{
+					"name": "get actores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/actores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"actores"
+							]
+						},
+						"description": "Obtenemos una lista de todos los actores"
+					},
+					"response": []
+				},
+				{
+					"name": "get actores by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/actores/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"actores",
+								"7"
+							]
+						},
+						"description": "Obtenemos un actor enviando su ID"
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints relacionados a la tabla \"actores\""
+		},
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "get categorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/categorias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categorias"
+							]
+						},
+						"description": "Obtenemos una lista de todas las categorias\n\n###"
+					},
+					"response": []
+				},
+				{
+					"name": "get categorias by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/categorias/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categorias",
+								"3"
+							]
+						},
+						"description": "Obtenemos una categoria enviando su ID\n\n###"
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints relacionados con la tabla \"categoria\""
+		},
+		{
+			"name": "Generos",
+			"item": [
+				{
+					"name": "get generos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/generos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"generos"
+							]
+						},
+						"description": "Obtenemos una lista de todos los generos"
+					},
+					"response": []
+				},
+				{
+					"name": "get generos by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/generos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"generos",
+								"3"
+							]
+						},
+						"description": "Obtenemos un genero enviando su ID"
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints relacionados con la tabla \"genero\"\n\n###"
+		},
+		{
+			"name": "Catalogos",
+			"item": [
+				{
+					"name": "get catalogos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/catalogo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"catalogo"
+							]
+						},
+						"description": "Obtenemos el listado de todos los catalogos"
+					},
+					"response": []
+				},
+				{
+					"name": "get catalogos by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/catalogo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"catalogo",
+								"1"
+							]
+						},
+						"description": "Obtenemos un catalogo enviando su ID"
+					},
+					"response": []
+				},
+				{
+					"name": "get catalogos by nombre (titulo del catalogo)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/catalogo/nombre/on brea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"catalogo",
+								"nombre",
+								"on brea"
+							]
+						},
+						"description": "Realiza una busqueda por nombre total o parcial sobre la tabla \"catalogo\" en el campo \"titulo\""
+					},
+					"response": []
+				},
+				{
+					"name": "get catalogos by genero",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/catalogo/genero/rama",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"catalogo",
+								"genero",
+								"rama"
+							]
+						},
+						"description": "Realiza una busqueda sobre los catalogos filtrando total o parcialmente por el nombre de sus generos asociados"
+					},
+					"response": []
+				},
+				{
+					"name": "get catalogos by categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/catalogo/categoria/erie",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"catalogo",
+								"categoria",
+								"erie"
+							]
+						},
+						"description": "Realiza una busqueda sobre los catalogos filtrando total o parcialmente por el nombre de sus categorias asociadas\n\n###"
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints relacionados con la tabla \"catalogo\""
+		}
+	]
+}
